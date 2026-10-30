@@ -1,0 +1,214 @@
+
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf7f2;
+    color: #3f352f;
+    line-height: 1.7;
+}
+
+/* Header styling */
+.site-header {
+    background-color: #6f5145;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.site-header h1 {
+    margin: 10px 0;
+    font-size: 2.3rem;
+}
+
+.subtitle {
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Navigation menu */
+.navbar {
+    background-color: #49382f;
+    text-align: center;
+    padding: 14px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #f0c9a8;
+}
+
+/* Introduction section */
+.hero {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo-placeholder {
+    background-color: #e9ded2;
+    color: #735848;
+    border: 2px dashed #b59a85;
+    border-radius: 12px;
+    min-height: 280px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heart {
+    font-size: 55px;
+    color: #9b6257;
+}
+
+.photo-placeholder p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.photo-placeholder small {
+    color: #806b5d;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    color: #765444;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #765444;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #49382f;
+}
+
+/* General content sections */
+.content-section {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+    color: #765444;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Qualities cards */
+.qualities {
+    background-color: #f1e8df;
+}
+
+.qualities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quality-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #9b7863;
+}
+
+.quality-card h3 {
+    color: #765444;
+    margin-top: 0;
+}
+
+/* Closing message */
+.message {
+    text-align: center;
+}
+
+.closing {
+    color: #765444;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #49382f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 5px;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 650px) {
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar a {
+        margin: 5px 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 20px auto;
+    }
+
+    .photo-placeholder {
+        min-width: 0;
+        min-height: 220px;
+    }
+
+    .qualities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+}
